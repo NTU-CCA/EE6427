@@ -1,0 +1,78 @@
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 2 -q 2 -o q02.yuv -B q02.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 3 -q 3 -o q03.yuv -B q03.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 4 -q 4 -o q04.yuv -B q04.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 5 -q 5 -o q05.yuv -B q05.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 6 -q 6 -o q06.yuv -B q06.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 7 -q 7 -o q07.yuv -B q07.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 8 -q 8 -o q08.yuv -B q08.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 9 -q 9 -o q09.yuv -B q09.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 10 -q 10 -o q10.yuv -B q10.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 11 -q 11 -o q11.yuv -B q11.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 12 -q 12 -o q12.yuv -B q12.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 13 -q 13 -o q13.yuv -B q13.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 14 -q 14 -o q14.yuv -B q14.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 15 -q 15 -o q15.yuv -B q15.263 
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 16 -q 16 -o q16.yuv -B q16.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 17 -q 17 -o q17.yuv -B q17.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 18 -q 18 -o q18.yuv -B q18.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 19 -q 19 -o q19.yuv -B q19.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 20 -q 20 -o q20.yuv -B q20.263
+
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 2 -q 2 -r 2900000 -o q02_2900.yuv -B q02_2900.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 6 -q 6 -r 660000 -o q06_660.yuv -B q06_660.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 10 -q 10 -r 330000 -o q10_330.yuv -B q10_330.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 14 -q 14 -r 230000 -o q14_230.yuv -B q14_230.263
+./tmn -i ./foreman_cif.yuv -x 3 -b 99 -S 0 -O 0 -I 18 -q 18 -r 190000 -o q18_190.yuv -B q18_190.263
+
+./tmndec -o5 -l q02.263 q02decode.yuv
+./tmndec -o5 -l q03.263 q03decode.yuv
+./tmndec -o5 -l q04.263 q04decode.yuv
+./tmndec -o5 -l q05.263 q05decode.yuv
+./tmndec -o5 -l q06.263 q06decode.yuv
+./tmndec -o5 -l q07.263 q07decode.yuv
+./tmndec -o5 -l q08.263 q08decode.yuv
+./tmndec -o5 -l q09.263 q09decode.yuv
+./tmndec -o5 -l q10.263 q10decode.yuv
+./tmndec -o5 -l q11.263 q11decode.yuv
+./tmndec -o5 -l q12.263 q12decode.yuv
+./tmndec -o5 -l q13.263 q13decode.yuv
+./tmndec -o5 -l q14.263 q14decode.yuv
+./tmndec -o5 -l q15.263 q15decode.yuv
+./tmndec -o5 -l q16.263 q16decode.yuv
+./tmndec -o5 -l q17.263 q17decode.yuv
+./tmndec -o5 -l q18.263 q18decode.yuv
+./tmndec -o5 -l q19.263 q19decode.yuv
+./tmndec -o5 -l q20.263 q20decode.yuv
+
+
+Options:
+        -a <n> image to start at [0]
+        -b <n> image to stop at [0]
+        -x <n> coding format [3]
+               n=1: SQCIF n=2: QCIF n=3: CIF n=4: 4CIF n=5: 16CIF
+                   128x96   176x144  352x288   704x576  1408x1152
+        -s <n> (0..15) integer pel search window [15]
+        -q <n> (1..31) quantization parameter QP [10]
+        -I <n> (1..31) QP for first frame [10]
+        -r <n> target bitrate in bits/s, default is variable bitrate
+           -R <n> start rate control after n% of sequence [0], or
+           -R <f> target frame rate [10.00], depending on rate control mode
+        -S <n> frames to skip between each encoded frame [2]
+        -Z <n> reference frame rate (25 or 30 fps) [30.0]
+        -O <n> frames skipped in original compared to reference frame rate [0]
+        -e <n> original sequence has n bytes header [0]
+        -g <n> insert sync after each n GOB (slice) [0]
+               zero above means no extra syncs inserted
+        -i <filename> original sequence [/b2/qcif/claire.qcif]
+        -o <filename> reconstructed frames [/b2/kol/out.qcif]
+        -B <filename> filename for bitstream [./stream.263]
+        -w write difference image to file "./diff.qcif" [OFF]
+        -m write repeated reconstructed frames to disk [OFF]
+        -t write trace to tracefile trace.intra/trace [OFF]
+        -D use unrestricted motion vector mode (annex D) [OFF]
+        -E use syntax-based arithmetic coding (annex E) [OFF]
+        -F use advanced prediction mode (annex F) [OFF]
+        -G use PB-frames (annex G) [OFF]
+        -Q <n> (0..3) BQUANT parameter [2]
+        -h Prints simple help
+        -H Prints advanced help
