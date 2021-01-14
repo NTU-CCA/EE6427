@@ -1,5 +1,5 @@
-|![image](https://github.com/NTU-CCA/EE6427/blob/master/logo.png)|
-|---|
+*(NOTE: All the content was found on the Internet.)*
+
 # EE6427 - Video Signal Processing
 
 ### Learning Objective:
